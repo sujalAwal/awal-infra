@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+
+  registry:
+    image: registry:2
+    container_name: registry
+    ports:
+      - "5000:5000"
+    volumes:
+      - registry_data:/var/lib/registry
+      - ./registry/config.yml:/etc/docker/registry/config.yml
+      - ./registry/htpasswd:/etc/docker/registry/htpasswd
+    restart: always
+
+volumes:
+  registry_data:
