@@ -1,2 +1,1 @@
-# awal-infra
-Infrastructure configuration for Awal platform — includes Docker setup for Jenkins CI/CD, private Docker registry, and supporting services. Manages build, image storage, and deployment pipeline for all Awal services.
+This repository contains the infrastructure setup for the Awal platform. It manages the CI/CD pipeline through Jenkins, a private Docker registry for storing built images, and all supporting services required for the production deployment workflow.
